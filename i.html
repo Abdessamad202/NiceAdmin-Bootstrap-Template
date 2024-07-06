@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Filter</title>
+    <style>
+        .infos {
+            display: none; /* Initially hide the filter */
+        }
+    </style>
+</head>
+<body>
+    <div class="col-12 col">
+        <div class="cart">
+            <div class="infos">
+                <ul>
+                    <li class="title">FILTER</li>
+                    <li class="same"><a href="">Today</a></li>
+                    <li class="same"><a href="">This Month</a></li>
+                    <li class="same"><a href="">This Year</a></li>
+                </ul>
+            </div>
+            <div class="thing-time-icon">
+                <div class="ting-time">
+                    <div class="thing">Budget Report</div>
+                    <div class="times">| This Month</div>    
+                </div>
+                <!-- Add the onclick attribute to call the toggleFilter function -->
+                <i class="fa-solid fa-ellipsis" onclick="toggleFilter(this)"></i>
+            </div>
+            <div class="chart-container">
+                <canvas id="radarChart"></canvas>
+            </div>
+            <!-- <div id="chart-container"></div> -->
+        </div>
+    </div>
+
+    <script>
+        // JavaScript function to toggle the filter display
+        function toggleFilter(icon) {
+            // Get the parent of the ellipsis icon
+            let parentElement = icon.parentElement;
+
+            // Select the filter element
+            let filterElement = parentElement.parentElement.querySelector(".infos");
+
+            // Toggle the display of the filter element
+            if (filterElement.style.display === "none" || filterElement.style.display === "") {
+                filterElement.style.display = "block";
+            } else {
+                filterElement.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
