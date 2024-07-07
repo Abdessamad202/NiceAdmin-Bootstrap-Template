@@ -102,6 +102,7 @@ section {
     position: fixed;
     width: 100%;
     top: 32px;
+    right: 0;
     z-index: 12;
 }
 .container-fluid {
@@ -301,6 +302,51 @@ section {
     display: flex;
     gap: 8px;
     align-items: center;    
+}
+@media (max-width : 460px) {
+    .main {
+        width: 320px;
+    }
+    .cart {
+        overflow: scroll;
+    }
+
+}
+@media (max-width : 540px) {
+    .logo-device .logo {
+        /* display: none; */
+    }
+    body {
+        background-color: #f0f4fc;
+    }
+    #radarChart, #lineChart ,#trafficChart{
+        /* width: 350px;  */
+        /* set the width to 50% of the viewport width */
+        /* max-height: 200px;  */
+        /* set the height to 300 pixels */
+        /* margin: 20px auto; */
+         /* add some margin to center the charts */
+    }
+    main{
+        /* padding: 0px; */
+    }
+    .main {
+        min-width: 320px;
+        /* width: 540px; */
+    }
+    .cart {
+        overflow: scroll;
+    }
+}
+
+
+#radarChart, #lineChart ,#trafficChart{
+    /* position: absolute; */
+    /* width: 400px; */
+    /* set the width to 50% of the viewport width */
+    max-height: 400px;
+     /* set the height to 300 pixels */
+    margin: 20px auto; /* add some margin to center the charts */
 }
 
 .n-m-p .profile .name .name  {
