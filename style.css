@@ -340,6 +340,15 @@ section {
 }
 
 
+#radarChart, #lineChart ,#trafficChart{
+    /* position: absolute; */
+    /* width: 400px; */
+    /* set the width to 50% of the viewport width */
+    height: 400px;
+     /* set the height to 300 pixels */
+    margin: 20px auto; /* add some margin to center the charts */
+}
+
 .n-m-p .profile .name .name  {
     font-weight: bold;
     cursor: pointer;
@@ -431,7 +440,7 @@ section {
 }
 aside {
     position:fixed;
-    top: 85px;
+    top: 93px;
     left: -300px;
     bottom: 0;
     cursor: pointer;
@@ -698,9 +707,17 @@ main .cart .icon-numbers .numbers .per{
     height: 90%;
     margin: 0;
 }
-@media (max-width:992px) {
+@media(min-width:9767px) and (max-width:992px) {
     .line {
         /* height: 400px; */
+    }
+    #radarChart, #lineChart ,#trafficChart{
+        /* position: absolute; */
+        width: 400px;
+        /* set the width to 50% of the viewport width */
+        height: 300px;
+         /* set the height to 300 pixels */
+        margin: 20px auto; /* add some margin to center the charts */
     }
 }
 .timeline-item {
@@ -916,4 +933,25 @@ table .head .Product {
 }
 .footer .designed span{
     color: #4154f1;
+}
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Hidden by default */
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    /* border-radius: 50%; */
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: opacity 0.3s;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #0056b3;
 }
