@@ -455,10 +455,10 @@ aside {
     background-color: #fff;
     transition: 0.5s;
 }
-.aside {
+/* .aside {
     left: -135px;
     opacity: 0;
-}
+} */
 aside .elements {
     list-style: none;
     padding: 0;

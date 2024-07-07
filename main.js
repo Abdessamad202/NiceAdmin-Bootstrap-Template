@@ -56,7 +56,7 @@ pic.addEventListener("click",function(){
         // Check the current state of the aside element
         if (aside.style.left === "" || aside.style.left === "-300px") {
             // Show the aside menu
-            aside.style.opacity = "1";
+            // aside.style.opacity = "1";
             aside.style.left = "0px";
             let all = document.querySelector(".all");
             // Adjust main content width if needed
@@ -66,10 +66,14 @@ pic.addEventListener("click",function(){
         } else {
             // Hide the aside menu
             aside.style.left = "-300px";
-            aside.style.opacity = "0";
+            // aside.style.opacity = "0";
+            if(window.innerWidth <540){
+                main.style.minWidth = "320px";
+            }else {
+                main.style.width = "100%";
 
+            }
             // Reset main content width
-            main.style.width = "100%";
         }
     });
 // });
@@ -81,46 +85,7 @@ searchicon.addEventListener("click",function (){
     
 })
 let tab = document.querySelector(".tab");
-tab.addEventListener("click",function(){
-    let menu = document.querySelector(".bx-menu");
-    menu.addEventListener("click", function() {
-        let aside = document.querySelector("aside");
-        if(aside.style.left === "0px") {
-            aside.style.left ="165px";
-        }
 
-    })
-    let all = document.querySelector(".all");
-    let logo = document.querySelector(".container-fluid .logo");
-    let title = logo.querySelector(".title");
-    logo.classList.toggle("Logo");
-    title.classList.toggle("remove");
-    let search = document.querySelector(".bar-search .search");
-    search.classList.toggle("remove");
-    let search1 = document.querySelector(".search1");
-    search1.classList.toggle("Search1");
-    let Sicon = document.querySelector(".notification .fa-magnifying-glass");
-    Sicon.addEventListener("click",function (){
-        search1.classList.toggle("Show1");
-        
-    })
-    Sicon.classList.toggle("sh");
-    let section =document.querySelector("section");
-    let media1 = document.querySelector(".media-md");
-    let media2 = document.querySelector(".media2");
-    let BAR = document.querySelector(".bar-search-n-m-p");
-    BAR.classList.toggle("bAR");
-    media1.classList.toggle("col-lg-4");
-    media2.classList.toggle("col-lg-8");
-    // all.classList.toggle("switch");
-    section.classList.toggle("switch");
-    if (all.style.width === "" || all.style.width === "100%") {
-        all.style.width = "991px";
-    }else{
-        all.style.width = "100%";
-
-    }
-})
 
 
 
