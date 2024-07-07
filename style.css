@@ -431,7 +431,7 @@ section {
 }
 aside {
     position:fixed;
-    top: 91px;
+    top: 85px;
     left: -300px;
     bottom: 0;
     cursor: pointer;
