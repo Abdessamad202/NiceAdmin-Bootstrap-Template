@@ -123,55 +123,6 @@ tab.addEventListener("click",function(){
 })
 
 
-let mobile = document.querySelector(".mobile");
-mobile.addEventListener("click",function(){
-    
-    let search = document.querySelector(".bar-search .search");
-    search.classList.toggle("remove");
-    let search1 = document.querySelector(".search1");
-    search1.classList.toggle("Search1");
-    let Sicon = document.querySelector(".notification .fa-magnifying-glass");
-    Sicon.classList.toggle("sh");
-    let BAR = document.querySelector(".bar-search-n-m-p");
-    BAR.classList.toggle("bAR");
-    Sicon.addEventListener("click",function (){
-        search1.classList.toggle("Show1");
-        
-    })
-    let logo = document.querySelector(".container-fluid .logo");
-    let title = logo.querySelector(".title");
-    logo.classList.toggle("Logo");
-    title.classList.toggle("remove");
-    let menu = document.querySelector(".bx-menu");
-    menu.addEventListener("click", function() {
-        let aside = document.querySelector("aside");
-        if(aside.style.left === "0px") {
-            aside.style.left ="180px";
-        }
-
-    })
-    let all = document.querySelector(".all");
-    let section =document.querySelector("section");
-    let pic =document.querySelector(".pic");
-    let media1 = document.querySelector(".media-md");
-    let media2 = document.querySelector(".media2");
-    let media3 = media2.querySelectorAll(".row .col-md-6");
-                // Toggle the col-md-6 class on each .col-12 element
-    media3.forEach(function(element) {
-        element.classList.toggle("col-md-6");
-    });
-    media1.classList.toggle("col-lg-4");
-    media2.classList.toggle("col-lg-8");
-    let n =document.querySelector(".n");
-    n.classList.toggle("remove");
-    section.classList.toggle("switch2");
-    if (all.style.width === "" || all.style.width === "100%") {
-        all.style.width = "767px";
-    }else{
-        all.style.width = "100%";
-
-    }
-})
 
 // let filter = document.querySelectorAll(".fa-ellipsis");
 function toggleFilter(icon) {
