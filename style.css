@@ -340,15 +340,6 @@ section {
 }
 
 
-#radarChart, #lineChart ,#trafficChart{
-    /* position: absolute; */
-    /* width: 400px; */
-    /* set the width to 50% of the viewport width */
-    max-height: 400px;
-     /* set the height to 300 pixels */
-    margin: 20px auto; /* add some margin to center the charts */
-}
-
 .n-m-p .profile .name .name  {
     font-weight: bold;
     cursor: pointer;
